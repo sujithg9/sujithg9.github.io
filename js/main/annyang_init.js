@@ -18,7 +18,7 @@ $(document).ready(function() {
 
       annyang.debug();
       annyang.addCommands(commands);
-      annyang.setLanguage('en');.
+      annyang.setLanguage('en');
       annyang.start();
 
     }
