@@ -5,7 +5,7 @@ $(document).ready(function() {
 
          var commands = {
             'about sujith': aboutMe,
-            'show sujith\'s *area': showFlickr,
+            'show sujith\'s *area': showAccomplishments,
           };
 
           var aboutMe = function(){
