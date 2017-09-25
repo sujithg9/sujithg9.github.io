@@ -4,8 +4,8 @@ $(document).ready(function() {
     if (annyang) {
 
          var commands = {
-            'about sujith': aboutMe,
-            'show sujith\'s *area': showAccomplishments,
+            'about': aboutMe,
+            'sujith\'s *area': showAccomplishments,
           };
 
           var aboutMe = function(){
