@@ -14,7 +14,7 @@ $(document).ready(function() {
               scrollTo('#education')
           }else if (area.toLowerCase().indexOf("experience") >= 0) {
               scrollTo('#experience')
-          }else if (area.toLowerCase().indexOf("portfolio") >= 0) || (area.toLowerCase().indexOf("projects") >= 0) {
+          }else if (area.toLowerCase().indexOf("portfolio") >= 0 || area.toLowerCase().indexOf("projects") >= 0) {
               scrollTo('#portfolio')
           }else if (area.toLowerCase().indexOf("contact") >= 0) {
               scrollTo('#contact')
