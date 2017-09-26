@@ -4,7 +4,7 @@ $(document).ready(function() {
     if (annyang) {
 
       var aboutMe = function(){
-        alert('About Me !!!')
+        scrollTo('#about')
       }
 
       var showAccomplishments = function(area) {
@@ -21,6 +21,11 @@ $(document).ready(function() {
       annyang.setLanguage('en');
       annyang.start();
 
+      var scrollTo = function(identifier) {
+                $('html, body').stop().animate({
+                          scrollTop: $(identifier).offset().top  - 50)
+                }, , 1250, 'easeInOutExpo');
+      }
     }
   });
 });
