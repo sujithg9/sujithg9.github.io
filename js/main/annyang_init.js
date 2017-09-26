@@ -8,12 +8,22 @@ $(document).ready(function() {
       }
 
       var showAccomplishments = function(area) {
-          alert(area)
+          if (area.toLowerCase().indexOf("skill") >= 0){
+              scrollTo('#skills')
+          }else if (area.toLowerCase().indexOf("education") >= 0) {
+              scrollTo('#education')
+          }else if (area.toLowerCase().indexOf("experience") >= 0) {
+              scrollTo('#experience')
+          }else if (area.toLowerCase().indexOf("portfolio") >= 0) || (area.toLowerCase().indexOf("projects") >= 0) {
+              scrollTo('#portfolio')
+          }else if (area.toLowerCase().indexOf("contact") >= 0) {
+              scrollTo('#contact')
+          }
       }
 
       var commands = {
         'about': aboutMe,
-        'sujith\'s *area': showAccomplishments,
+        'show me his *area': showAccomplishments,
       };
 
       annyang.debug();
