@@ -24,6 +24,11 @@ $(document).ready(function() {
         }
       }
 
+      // Callback fucntion for the command redirectToPages
+      var redirectToPages = function(page) {
+        alert('Page Request !!!')
+      }
+
       // Dict of commands that annyang responds to with callback fucntionality
       var commands = {
         'about': aboutMe,
